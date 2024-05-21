@@ -151,3 +151,221 @@
 
 
 
+
+
+// const prompt = require('prompt-sync')();
+// function totalInfos(salario, sexo){
+//     let infos = (salario * salario && sexo * sexo)
+//     return infos
+// }
+// let salario
+// let sexo
+// do {
+//     salario = prompt("Qual é o valor do salário? Digite 0 para encerrar:")
+// }while(salario != 0)
+//     // do {
+//     //     sexo = prompt("Qual é o sexo do funcionario? Digite 1 para masculino e 2 feminino:")
+//     // } whlie ()
+
+// totalsalario = salario*salario
+// console.log(totalsalario)
+
+
+
+
+// EX 08
+//const prompt = require('prompt-sync')();
+// console.log("Digite 0 para encerrar a contagem")
+// let soma = 0
+// let salario;
+// let sexo;
+// let resultado;
+// do{
+//   salario = parseFloat(prompt("Qual é o valor do salário?"))
+//   sexo = parseInt(prompt("Qual é o sexo? Digite 1 para masculino e 2 feminino:"))
+//   for(let i = salario; salario == 0; salario++){
+//     soma += salario
+//   }
+//   //resultado = salario++
+// }while(salario != 0 && sexo != 0)
+// console.log(resultado)
+
+
+
+//EX 09
+// const prompt = require('prompt-sync')();
+// let totalSalarioHomens = 0;
+// let totalSalarioMulheres = 0;
+
+// do {
+//     let salario = parseFloat(prompt("Digite o salário do funcionário:"));
+//     let sexo = prompt("Digite o sexo do funcionário (M para masculino, F para feminino):").toUpperCase();
+
+//     if (sexo === 'M') {
+//         totalSalarioHomens += salario;
+//     } else if (sexo === 'F') {
+//         totalSalarioMulheres += salario;
+//     } else {
+//         alert("Sexo inválido! Por favor, digite M para masculino ou F para feminino.");
+//         continue; // Volta ao início do loop para pedir novamente os dados
+//     }
+
+//     let continuar = prompt("Deseja continuar? (s/n):");
+//     if (continuar.toLowerCase() !== 's') {
+//         break; // Sai do loop se o usuário não quiser continuar
+//     }
+// } while (true);
+
+// console.log("Total de salário pago aos homens:", totalSalarioHomens);
+// console.log("Total de salário pago às mulheres:", totalSalarioMulheres);
+
+
+
+
+
+
+
+// EX 10
+/*const prompt = require('prompt-sync')();
+
+let soma = 0;
+let menor;
+let quantidade = 0;
+let pares = 0;
+
+do {
+    let numero = parseFloat(prompt("Digite um número:"));
+    soma += numero;
+    quantidade++;
+
+    if (menor === undefined || numero < menor) {
+        menor = numero;
+    }
+
+    if (numero % 2 === 0) {
+        pares++;
+    }
+
+    let continuar = prompt("Deseja continuar? (s/n):");
+    if (continuar.toLowerCase() !== 's') {
+        break;
+    }
+} while (true);
+
+let media = soma / quantidade;
+
+console.log("a) O somatório entre todos os valores é:", soma);
+console.log("b) O menor valor digitado é:", menor);
+console.log("c) A média entre todos os valores é:", media);
+console.log("d) Quantidade de valores pares:", pares);
+
+
+
+// 11
+*/
+
+//
+// function calcularPA(primeiroTermo, razao) {
+//     var elementosPA = [];
+//     var soma = 0;
+
+//     // Calcula os 10 primeiros elementos da PA e a soma
+//     for (var i = 0; i < 10; i++) {
+//         var elemento = primeiroTermo + razao * i;
+//         elementosPA.push(elemento);
+//         soma += elemento;
+//     }
+
+//     // Mostra os elementos da PA e a soma na tela
+//     console.log("Os 10 primeiros elementos da PA são:");
+//     console.log(elementosPA);
+//     console.log("A soma dos elementos da PA é: " + soma);
+// }
+
+// // Exemplo de uso da função
+// var primeiroTermo = parseInt(prompt("Digite o primeiro termo da PA:"));
+// var razao = parseInt(prompt("Digite a razão da PA:"));
+
+// calcularPA(primeiroTermo, razao);
+
+// EX 12
+// let n = 10;
+// let fib = [0, 1];
+
+
+// for (let i = 2; i < n; i++) {
+//  fib.push(fib[i - 1] + fib[i - 2]);
+// }
+
+
+// console.log(fib);
+
+
+// EX 13
+// const prompt = require('prompt-sync')();
+// let n = parseInt(prompt("qual seu num:"));
+// let fib = [0, 1];
+
+
+// for (let i = 2; i < n; i++) {
+//  fib.push(fib[i - 1] + fib[i - 2]);
+// }
+
+// console.log(fib);
+
+
+
+// EX13
+
+
+let vetor = []; // Inicializa um vetor vazio
+// Preenche o vetor com números de 1 a 15
+for (let i = 1; i <= 15; i++) {
+ vetor.push(i);
+}
+// Imprime o vetor preenchido
+console.log(vetor);
+
+
+
+
+//EX 14
+// let nomes1 = ['João', 'Pedro', 'Matheus', 'Ryan', 'Vitor', 'Julia', 'Isabela','Giovanna','Daniela', 'Clara']
+// nomes1.reverse();  
+// console.log(nomes1)
+
+
+
+
+
+
+//EX 15)
+/*
+let valinteiros = [1, 20, 15, 7, 13, 92, 55, 80, 95, 34, 79, 47, 8, 24]
+let pares = valinteiros.filter(function(valinteiros){
+  return valinteiros % 2 === 0;
+})
+ 
+console.log(pares)
+let posicoesPares = [];
+pares.forEach(function(par) {
+    posicoesPares.push(valinteiros.indexOf(par));
+});
+
+console.log("Posições dos números pares:", posicoesPares);
+*/
+
+
+
+//EX 16)
+
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let array = [];
+for (let i = 0 ; i < 99 ; i++){
+  array.push(getRandom(0,99));
+}
+
+console.log(array);
