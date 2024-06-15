@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Classes e IDs</title>
+    <style type="text/css">
+        @import url(./estilo.css);
+        #principal {
+            background-color: rgb(32, 118, 231);
+        }
+
+        .cor-Paragrafo{
+            color:rgb(219, 14, 14);
+        }
+        #destaque {
+            color: black;
+        }
+        #topo{
+            border: 3px solid red;
+            
+        }
+        #conteudo{
+            margin: 122px;
+            border: 3px solid black;
+        }
+        #rodape{
+            margin: 12px;
+            background-color: aliceblue;
+        }
+        #name{
+            background-color: yellow;
+        }
+        a:link {
+            text-decoration: none;
+            color: black;
+            }
+        :visited{
+            color: aliceblue;
+            text-transform: uppercase;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body id="principal">
+    <div id="topo">
+    <h1>Estilo CSS</h1>
+    
+        <img src="imagens/css3logo.png" alt="">
+    
+    <p class="cor-Paragrafo">CSS (<span id="destaque">Style Sheets ou Folhas de Estilo em Cascata)</span> é uma linguagem de estilo usada para descrever a apresentação de um <br>
+        documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.</p>
+    <P>A propriedade CSS background-color define a cor de fundo de um elemento.</P>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li>Products</li>
+        <li>Contato</li>
+    </ul>
+    </div>
+    <div if="conteudo">
+        <div class="produtos">
+            Produto  1
+        </div>
+        <div class="produtos">
+            Produto 2
+        </div>
+        <div class="produtos">
+            Produto 3
+        </div>
+        
+    </div>
+    <div id="rodape">
+        Todos os direitos reservados &copy; <span id="name">BRUNO</span>
+    </div>
+</body>
+</html>

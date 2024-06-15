@@ -1,0 +1,14 @@
+.listanaoordenada{
+    list-style-type: square;
+}
+nav#menu{
+    border: 3px solid blue;
+    display: block;
+}
+nav#menu li{
+    border: 3px solid rebeccapurple;
+    display: inline-block ;
+    background-color: rgb(243, 17, 17);
+    color: aqua;
+    padding: 23px;
+     }
