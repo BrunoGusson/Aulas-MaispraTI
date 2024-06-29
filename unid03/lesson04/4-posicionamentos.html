@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Estático, relativo, absoluto e fixo </title>
+    <style type="text/css">
+        h1{
+            position: static;
+        }
+        p {
+            width: 400px;
+        }
+        #container{
+            background-color: aquamarine;
+            width: 800px;
+            margin: 100px auto;
+            padding: 10px;
+            border: 3px solid black;
+            position: absolute;
+        
+        }
+        .relative{
+            border: 3px solid crimson;
+            position: relative ;
+            left: 150px;
+        }
+        .absolute{
+           border: 3px solid red; 
+           background-color: blueviolet;
+           position: absolute;
+           left: 100px;
+        }
+        .fixed{
+            border: 3px solid chocolate;
+            background-color: blueviolet;
+            position: fixed;
+            top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+
+        <p class="relative">Este tipo de posicionamento funciona de forma muito semelhante ao static , a única real diferença é que é possível configurar quatro propriedades do elemento ao qual o posicionamento está vinculado: top (cima) bottom (baixo) left (direita)</p>
+        
+        <p class="absolute"> Absolute. Essa propriedade position CSS é usada para que o elemento da página parta do ponto superior esquerdo a outros elementos. Ou seja, ela determina o elemento “pai” e os elementos “parentes”.</p>
+
+        <p class="fixed">O position: fixed; irá fixar a posição do elemento na coordenada que você definir. A medida que a página é rolada, o elemento continua fixo na posição que você definiu e o conteúdo da página rola normalmente.</p>
+
+    </div>
+    
+</body>
+</html>

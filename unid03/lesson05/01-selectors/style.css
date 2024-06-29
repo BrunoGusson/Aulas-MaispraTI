@@ -1,0 +1,27 @@
+ /* * {
+    border: 3px solid;
+    background-color: aquamarine;
+} */
+h2 {
+    color: tomato;
+}
+.classe01{
+    border: 2px solid fuchsia;
+    color: blueviolet;
+}
+p.classe01{
+    color: forestgreen;
+    background-color: black;
+}
+#conteudo{
+    border: 3px solid blueviolet;
+}
+li > a{
+    text-decoration: underline red ;
+}
+h2+p{
+    background-color: darkslategray;
+}
+h2~p{
+    background-color: brown;
+}
