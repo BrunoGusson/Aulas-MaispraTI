@@ -59,3 +59,117 @@ nav ul li a:link {
 nav ul li a:hover {
     border-bottom: 1px solid #535858 ;
 }
+
+/* Principal */
+
+#conteudo{
+    width: 710px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+article#video{
+    float:left;
+    width: 310px;
+    margin-left: 20px;
+}
+
+article#mapa{
+    float:left;
+    width: 310px;
+    margin-left: 35px;
+}
+
+article#exposicoes{
+    float:left;
+    width: 310px;
+    margin-left: 15px 0 0 25px;
+}
+
+article#historia{
+    float:left;
+    width: 310px;
+    margin-left: 15px 0 0 20px;
+}
+
+h4{
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+}
+
+h3{
+    color: #226115;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+/* Aside */
+
+aside{
+    margin-bottom: 20px;
+    width: 350px;
+    float: right;
+}
+
+input{
+    height: 20px;
+    width: 80px;
+    background-color: #fff;
+    border: none;
+    font-size: 1em;
+}
+
+input.campo{
+    border: 1px;
+    border: 1px solid #ada484;
+}
+
+input.botao{
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: #9b9271;
+    font-size: 1.2em;
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    display: none;
+}
+
+section#visita{
+    background: #cdc8b1;
+    padding: 10px 20px 20px ;
+    margin-top: 10px;
+}
+
+section#galeria{
+    padding: 0 30px 0 30px;
+}
+
+section#galeria{
+    display: block;
+    padding: 15px;
+    background: url(images/fundo-foto.png) no-repeat;
+    float: left;
+}
+
+/* Footer */
+
+footer{
+    clear: both;
+    padding: 20px 0;
+    text-align: center;
+    background: url(images/fundo-rodape.png) no-repeat center top;
+    margin-top: 20px;
+}
+
+footer>p a{
+    padding: 2px 10px;
+
+}
