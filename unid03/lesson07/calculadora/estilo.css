@@ -1,0 +1,31 @@
+body{
+    background-color: antiquewhite;
+}
+
+.cal{
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+
+}
+
+.resultado{
+    border: 3px solid rebeccapurple;
+    width: 300px;
+
+}
+
+.cal{
+    height: 300px;
+    width: 300px;
+}
+
+.botao{
+    width: 60px;
+    height: 50px;
+}
+
+.botao{
+    text-transform: uppercase;
+    font-size: 20px;
+}

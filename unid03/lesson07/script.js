@@ -14,6 +14,6 @@
 //     document.write('Evento aconteceu!')
 // }
 
-function eventoJanela() {
-    document.write('Evento aconteceu!')
-}
+// function eventoJanela() {
+//     document.write('Evento aconteceu!')
+// }
