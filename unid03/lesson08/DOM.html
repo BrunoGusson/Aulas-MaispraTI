@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript aplicando CSS</title>
+
+    <script>
+       let body = document.getElementById('body')
+       let laranja = document.getElementById('orange')
+       let amarelo = document.getElementById('yellow')
+       let vermelho = document.getElementById('red')
+       let verde = document.getElementById('green')
+
+       function trocarEstilizacao(){
+
+       }
+    </script>
 </head>
-<body>
-    
+<body id="body">
+    <button type="button" onclick="trocarEstilizacao('#fff')" id="laranja">Laranja</button>
+    <button type="button" onclick="trocarEstilizacao('blue')" id="amarelo">Amarelo</button>
+    <button type="button" onclick="trocarEstilizacao('red')" id="vermelho">Vermelho</button>
+    <button type="button" onclick="trocarEstilizacao('green')" id="verde">Verde</button>
+
+
+
 </body>
 </html>
