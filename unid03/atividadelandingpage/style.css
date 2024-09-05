@@ -3,6 +3,8 @@
 body{
     background: white;
     font: 14px "Avantgarde", "TeX Gyre Adventor", URW Gothic L, sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 /* Barra de Navegação */
@@ -12,7 +14,7 @@ a:link{
 }
 
 header {
-    background-image: url(images/cabecalhofundo3.jpg);
+    background-color: lightskyblue;
     width: 100%;
     height: 220px;
     
@@ -74,22 +76,22 @@ a:hover{
 
 .slider {
     display: block;
-    height: 293px;
-    width: 600px;
+    height: 29em;
+    width: 60em;
     margin: auto;
     margin-top: 20px;
     position: relative;
 }
 
-.slider li {
+ .slider li {
     list-style: none;
     position: absolute;
 }
 
 .slider img {
     margin: auto;
-    height: 100%;
-    width: 100%;
+    height: 60em;
+    width: 40em;
     vertical-align: top;
 }
 
@@ -100,7 +102,7 @@ a:hover{
 
 .slider label {
     background-color: #8431f1e7;
-    bottom: 10px;
+    bottom: 20px;
     cursor: pointer;
     display: block;
     height: 10px;
@@ -140,14 +142,6 @@ a:hover{
     left: 120px;
 }
 
-.slider li:nth-child(8) label {
-    left: 140px;
-}
-
-.slider li:nth-child(9) label {
-    left: 260px;
-}
-
 .slider img {
     opacity: 0;
     visibility: hidden;
@@ -157,5 +151,4 @@ a:hover{
     opacity: 1;
     visibility: visible;
     z-index: 10;
-}
-
+} 
