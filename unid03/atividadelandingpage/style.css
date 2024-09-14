@@ -5,20 +5,36 @@ body{
     font: 14px "Avantgarde", "TeX Gyre Adventor", URW Gothic L, sans-serif;
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 .container{
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-#parallax{
+#parallax1{
     position: relative;
     height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-image: url(images/LJAgeral.png);
+    background-image: url(images/philcho/ljaedbenes3.png);
 }
+
+#parallax2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(images/philcho/ljaedbenes3.png);
+}
+
 
 /* Barra de Navegação */
 
@@ -39,7 +55,7 @@ header {
     font-family: "Tiny5", sans-serif;
     font-size: 5em;
     height: 20px;
-    display: block;
+    display: flex;
     position: absolute;
 }
 
@@ -85,28 +101,55 @@ a:hover{
     transition: 500ms linear; 
 }
 
+#membrosoriginais{
+    padding: 20px;
+    margin: 0 auto;
+    /* position: static;*/
+    margin-top: 95%; 
+}
+
 /* Carrossel de Imagens */
 
 .slider {
-    display: block;
-    height: 29em;
+    display: flex;
+    overflow: hidden;
+    height: 39em;
     width: 60em;
-    margin: auto;
-    margin-top: 20px;
+    margin: 0 auto;
+    /* margin-top: 100em; */
     position: relative;
 }
+
+.slider ul {
+    display: flex; /* Alterado para exibir os itens do slider em linha */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* 
+.slider li {
+    min-width: 100%; /* Alterado para garantir que cada slide ocupe toda a largura do container 
+    position: relative;
+} */
 
 .slider li {
     list-style: none;
     position: absolute;
 }
 
+/*.slider img {
+    width: 100%; /* Alterado para ajustar a largura da imagem ao slider */
+  /*  height: auto; /* Alterado para manter a proporção da imagem */
+    /* display: block;
+} */
+
+
 .slider img {
     margin: auto;
     height: 60em;
     width: 40em;
     vertical-align: top;
-}
+} 
 
 .slider input{
     display: none;
@@ -123,7 +166,7 @@ a:hover{
     width: 4em;
     z-index: 10;
     border-radius: 10px;
-    /* opacity: .5; */
+    opacity: .5;
     transition: 5s;
 }
 
@@ -157,11 +200,24 @@ a:hover{
 
 .slider img {
     opacity: 0;
-    visibility: hidden;
+    transition: opacity 0.5s ease-in-out; /* Alterado para suavizar a transição de opacidade */
+    visibility: hidden
 }
+
+/* .slider img {
+    opacity: 0;
+    visibility: hidden;
+} */
+
 
 .slider li input:checked ~ img{
     opacity: 1;
     visibility: visible;
     z-index: 10;
 } 
+
+          /* FUNDAÇÃO     */
+
+/* #membrosoriginais{
+    
+}  */
